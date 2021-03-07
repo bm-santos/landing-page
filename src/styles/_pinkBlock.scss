@@ -1,0 +1,19 @@
+div {
+    .container-pink-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: rgba(240, 99, 184, 0.15);
+        border-radius: 50px;
+        width: 90%;
+        align-items: center;
+        margin-top: 50px;
+        .image {
+            z-index: 0;
+            overflow: hidden;
+        }
+        .text {
+            z-index: 1;
+            margin: 20px;
+        }
+    }
+}

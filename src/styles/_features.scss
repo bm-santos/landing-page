@@ -1,0 +1,65 @@
+div {
+    .container-features {
+        width: 90%;
+        height: 1026px;
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        justify-items: center;
+        margin-top: 50px;
+        .feature-title {
+            text-align: center;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            overflow: wrap;
+            .feature-card {
+                width: 530px;
+                height: 388px;
+                // background-color: red;
+            }
+        }
+    }
+    .container-feature-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        // background-color: red;
+        height: 388px;
+        width: 532px;
+        .img {
+            z-index: 1;
+            padding-right: 30px;
+        }
+        .text {
+            z-index: 2;
+            // background-color: green;
+            height: 276;
+            width: 220px;
+            // background-color: orange;
+            // margin-bottom: 200px;
+            a {
+                font-style: normal;
+                color: #212353;
+                width: 87px;
+                height: 26px;
+                font-weight: 500;
+                font-size: 16px;
+                // background-color: red;
+            }
+            span {
+                padding-left: 5px;
+            }
+        }
+        .bg {
+            z-index: 0;
+            // background-color: yellow;
+            margin-left: -400px;
+            svg {
+                overflow: hidden;
+            }
+            overflow: hidden;
+        }
+    }
+}

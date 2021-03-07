@@ -1,0 +1,31 @@
+div {
+    .container-hero {
+        //background-color: rgb(38, 255, 38);
+        justify-self: center;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: left;
+        justify-self: center;
+        align-content: flex-start;
+        height: 570px;
+        overflow: hidden;
+        .text {
+            z-index: 1;
+            overflow: visible;
+            Button {
+                width: 170px;
+                border: 0;
+            }
+        }
+        .image-hero {
+            z-index: 0;
+            margin-left: -300px;
+            margin-top: 120px;
+            svg {
+                overflow: hidden;
+            }
+            overflow: hidden;
+        }
+    }
+}

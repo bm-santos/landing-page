@@ -1,0 +1,20 @@
+html {
+    font-family: Helvetica, Nunito, sans-serif;
+    background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+}
+div {
+    padding-left: 5px;
+    .content {
+        width: 95%;
+        min-width: 50% !important;
+        justify-content: center;
+    }
+}
+
+@import "./header";
+@import "./hero";
+@import "./pinkBlock";
+@import "./features";
+@import "./testimonials";
+@import "./try";
+@import "./footer";
