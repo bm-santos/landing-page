@@ -10,7 +10,7 @@ export default function BtnLearnMore(props: any) {
                     border: 0,
 
                     color: "white",
-                    fontSize: "16px",
+                    fontSize: "18px",
                     textAlign: "center",
 
                 }}

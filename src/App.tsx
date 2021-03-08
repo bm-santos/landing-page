@@ -16,6 +16,7 @@ function App() {
       <PinkBlock />
       <Features />
       <Testimonials />
+      <hr />
       <Try />
       <Footer />
     </div>

@@ -1,4 +1,5 @@
-import Button from "../Button";
+import BtnLearnMore from "../BtnLearnMore";
+import BtnRequest from "../BtnRequest";
 import HeroImage from "../ImagesSVG/HeroImage";
 import Text from "../Text";
 
@@ -26,11 +27,7 @@ export default function Hero() {
                     width="380px"
                     lineHeight="160%"
                 />
-                <Button
-                    backgroundColor="#9C69E2"
-                    width="170 px"
-                    color="white"
-                ><span>Learn more</span></Button>
+                <BtnLearnMore bgColor="#9C69E2" />
             </div>
             <div className="image-hero">
                 <HeroImage />

@@ -1,4 +1,4 @@
-import FowardArrow from "../FowardArrow";
+import { ForwardArrow } from "../Arrow";
 import FeatureImage from "../ImagesSVG/FeatureImage";
 import Text from "../Text";
 import Trapezoid from "./Trapezoid";
@@ -29,7 +29,7 @@ export default function FeatureCard(props: any) {
                     lineHeight="130%"
                 />
                 <a href={props.link}>
-                    Learn more<span><FowardArrow stroke="#9C69E2" /></span>
+                    Learn more<span><ForwardArrow stroke="#9C69E2" /></span>
                 </a>
             </div>
             <div className="bg">

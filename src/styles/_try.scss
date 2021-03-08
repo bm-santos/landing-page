@@ -1,0 +1,16 @@
+div {
+    .container-try {
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+        .text {
+            justify-content: left;
+            margin-left: -100px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

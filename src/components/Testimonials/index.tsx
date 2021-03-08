@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FowardArrow from "../FowardArrow";
+import { BackArrow, ForwardArrow } from "../Arrow";
 import Text from "../Text";
 import TestimonialCard from "./TestimonialCard";
 
@@ -37,6 +37,15 @@ export default function Testimonials() {
             }
         }
     }
+    const bringPreviousTestimonial = () => {
+        if (showTestimonial > 0) {
+            setShowTestimonial(showTestimonial - 1)
+            setNextTestimonial(showTestimonial)
+        } else {
+            setShowTestimonial(testimonials.length - 1)
+            setNextTestimonial(0)
+        }
+    }
 
     return (
         <div className="container-testimonials">
@@ -46,7 +55,6 @@ export default function Testimonials() {
                     color="white"
                     fontSize="40px"
                     fontWeight="bold"
-                // lineWeight="160%"
                 />
             </div>
             <div className="testimonial-area">
@@ -66,9 +74,10 @@ export default function Testimonials() {
                 </div>
             </div>
             <div className="testimonial-button">
-                <span onClick={bringNextTestimonial} ><FowardArrow stroke="white" /></span>
+                <span onClick={bringPreviousTestimonial} ><BackArrow /></span>
+                <span onClick={bringNextTestimonial} className="light"><ForwardArrow stroke="white" /></span>
             </div>
-        </div>
+        </div >
 
     )
 }

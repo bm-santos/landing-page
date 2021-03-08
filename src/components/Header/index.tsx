@@ -1,5 +1,5 @@
-import Button from "../Button";
-import FowardArrow from "../FowardArrow";
+import BtnRequest from "../BtnRequest";
+import { ForwardArrow } from "../Arrow";
 import Logo from "../Logo";
 import Menu from "./Menu";
 import '../../styles/index.css'
@@ -15,12 +15,7 @@ export default function Header() {
                     <Menu />
                 </div>
                 <div className="button">
-                    <Button
-                        backgroundColor="white"
-                        width="210 px"
-                    >Request demo<span>
-                            <FowardArrow stroke="#9C69E2" />
-                        </span></Button>
+                    <BtnRequest />
                 </div>
             </div>
         </div>

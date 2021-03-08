@@ -8,6 +8,7 @@ div {
         grid-template-rows: 2fr 7fr 1fr;
         overflow: hidden;
         padding: 20px;
+        margin-bottom: 100px;
         .testimonial-title {
             margin-bottom: -20px;
         }
@@ -44,6 +45,9 @@ div {
         }
         .testimonial-button {
             justify-self: right;
+            span {
+                padding: 5px;
+            }
         }
     }
 }
